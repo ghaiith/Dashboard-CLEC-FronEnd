@@ -92,11 +92,31 @@ textarea {
 }
 .addadminform{
     border-radius: 2%;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 150px;
     background-color:  rgb(240, 240, 240);
     width: 50%;
     padding: 20px;
 }
+.AdminSearchBox{
+    width: 35%;
+    margin-left:  auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.active-cyan-2 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+  }
+  .active-cyan input[type=text] {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+  }
+  .active-cyan .fa, .active-cyan-2 .fa {
+    color: #4dd0e1;
+  }
 /* ######################## Main Conferences ########################*/
 /* .PostCard{
     box-shadow: 0 0 4px 0;
