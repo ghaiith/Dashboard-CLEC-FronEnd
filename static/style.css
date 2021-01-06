@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    font-family: 'Open Sans', sans-serif;}
+
+/* ######################## NaveBar ########################*/
+.helloAdmin{
+    color: rgb(99, 99, 99);
+    font-size: medium;
+}
+.AdminPName{
+    font-weight: bold;
+    font-size: 24px;
+}
+/* ######################## SideBar ########################*/
+.sidebarAdmin{
+    position: fixed;
+    top:0;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    padding: 70px 0px 0px 10px;
+    border-right: 10px solid #d3d3d3;
+}
+.acolor li a{
+    color: #d3d3d3;
+}
+.nav-item :hover{
+    color: #1266f1;
+    border-bottom: 1px solid #1266f1;
+}
+#LogoutBtn:hover{
+    color: red;
+    border-bottom: 1px solid red;
+}
+/* ######################## Main AdminPanel ########################*/
+main{
+    margin: 100px 0px 0 270px;
+}
+.DelPost{
+    color:red;
+}
+.DelPost:hover{
+    background-color: red;
+    color: aliceblue;
+}
+.EditPost:hover{
+    background-color:#1266f1 ;
+    color:aliceblue
+}
+
+.FormCard{
+    width: 100%;
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+}
+.space{
+    margin-left: 15px;
+}
+.form-outline{
+    background-color:white;
+}
+textarea {
+    resize: none;
+  }
+.PostPrev{
+    border-radius: 3%;
+    border: 1px solid grey;
+    margin: auto;
+    background-color:  rgb(240, 240, 240);
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+}
+.LoginForm{
+    padding: 20px;
+    width: 30%;
+    height: 380px;
+    margin:auto;
+    margin-top: 200px;
+    border: 1px black;
+    border-radius: 10%;
+    box-shadow:rgb(228, 227, 227);
+}
+.loginl{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 155px;
+}
+.cardshadow{
+    box-shadow: none;
+    border: 1px solid rgb(219, 219, 219);
+}
+.addadminform{
+    border-radius: 2%;
+    margin: auto;
+    background-color:  rgb(240, 240, 240);
+    width: 50%;
+    padding: 20px;
+}
+/* ######################## Main Conferences ########################*/
+/* .PostCard{
+    box-shadow: 0 0 4px 0;
+    background-color: white;
+    box-sizing: border-box;
+    height: 160px;
+    width: 1250px;
+    align-items: center;
+    padding: 2px;
+    margin-top: 15px;
+    position: relative;
+
+}
+.PostCard .PostImg{
+    width:150px;
+    border: 5px black;
+    border-radius: 40%;
+    margin-top: 3px;
+    margin-left: 4px;
+}
+.BodyPost{
+    display: inline-block;
+    margin-left: 10px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 20px; 
+    border: 1px solid black;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.PriceNum{
+    color: rgb(4, 194, 4);
+    float: right;
+} */

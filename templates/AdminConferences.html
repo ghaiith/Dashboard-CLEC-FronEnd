@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link with MdBootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Conferences</title>
+</head>
+
+<body>
+    <!-- ########################################## Navbar ########################################## -->
+    <nav class="navbar navbar-light bg-light fixed-top flex-md-nowrap shadow">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1 AdminPName">ADMIN PANEL</span>
+            <span class="navbar-brand mb-0 h1 helloAdmin">Hello, Admin</span>
+        </div>
+    </nav>
+
+    <!-- ########################################## SideBar ########################################## -->
+    <div class="container-fluid SideBar">
+        <div class="row">
+              <div class="col-md-2 bg-dark d-none d-md-block sidebarAdmin">
+                  <div class="left-sidebar">
+                      <ul class="nav flex-column acolor">
+                          <li class="nav-item">
+                              <a class="nav-link active " aria-current="page" href="./Admin Panel.html"> <i class="fas fa-home"></i> Home Page</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="./AdminCourses.html"><i class="fas fa-book-reader fa-sm"> </i> Courses</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="./AdminExams.html"><i class="fas fa-user-edit fa-sm"></i> Exams</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="./AdminConferences.html"><i class="fas fa-users fa-sm"></i> Conferances</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./AdminsUser.html"><i class="fas fa-user-cog fa-sm"></i></i> Admins</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./AdminTags.html"><i class="fas fa-tags fa-sm"></i></i> Tags</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="./AdminInst.html"><i class="fas fa-school fa-sm"></i></i> institution</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" id="LogoutBtn" href="#"><i class="fas fa-sign-out-alt fa-sm"></i> Logout</a>
+                          </li>
+                        </ul>
+                  </div>
+              </div>
+        </div>
+    </div>
+    <!-- ##########################################   Main   ########################################## -->
+    <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <h2>Conferences</h2>
+        <hr>
+        <div class="col">
+    <!-- ##########################################   ADD POSTS   ########################################## -->
+
+            <a href="./CreateConferences.html">
+                <div class="card h-60">
+                    <h2 class="card-body"><i class="fas fa-plus"></i> Add Conferances</h2>
+                </div>
+            </a>
+        </div>
+        <br>
+<!-- ##########################################   POSTS   ########################################## -->
+
+        <div class="container">
+            <div class="row mb-3">
+<!-- ############################################ POST ########################################### -->
+                <div class="col-sm">
+                    <div class="card" style="width: 16rem;">
+                        <img class="card-img-top" src="../static/img/pic2.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title"> Conference Name</h5>
+                            <p class="card-text" style="color:rgb(54, 184, 54); margin-bottom:0;">100 IQD</p>
+                            <div class="CENTER">
+                                <i class="fas fa-user-friends fa-xs"></i>
+                                <span class="PlacePost" style="font-size: 12px;">University Of Baghdad-IT College</span>
+                            </div>
+                            <div class="PLACE">
+                                <i class="fas fa-map-marker-alt fa-xs"></i>
+                                <span class="PlacePost" style="font-size: 12px;">Baghdad</span>
+                            </div>
+                            <div class="DATE">
+                                <i class="fas fa-calendar-alt fa-xs"></i>
+                                <span class="PlacePost" style="font-size: 12px;">1/1/2021 - 22/1/2021</span>
+                            </div>
+                            <hr>
+                            <p class="card-text " style="font-size:12px ; overflow: hidden; text-overflow: ellipsis; display: -webkit-box;
+                    -webkit-line-clamp: 4; /* number of lines to show */ -webkit-box-orient: vertical;">Some quick
+                                example text to build on the card title and make up the
+                                bulk of the
+                                card's content Some quick example text to build on the card title and make up the
+                                bulk of the
+                                card's content Some quick example text to build on the card title and make up the
+                                bulk of the
+                                card's content</p>
+                            <a href="./PostPreview.html" class="btn btn-primary btn-sm">Preview Post</a>
+                            <a href="#" class="btn btn-sm DelPost"><i class="fas fa-trash"></i></a>
+                            <a href="#" class="btn btn-sm EditPost"><i class="fas fa-edit"></i></a>
+                        </div>
+                    </div>
+                </div>
+<!-- ############################################ ENDPOST ########################################### -->
+<!-- ############################################ POST ########################################### -->
+<div class="col-sm">
+    <div class="card" style="width: 16rem;">
+        <img class="card-img-top" src="../static/img/pic2.png" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title"> Conference Name</h5>
+            <p class="card-text" style="color:rgb(54, 184, 54); margin-bottom:0;">100 IQD</p>
+            <div class="CENTER">
+                <i class="fas fa-user-friends fa-xs"></i>
+                <span class="PlacePost" style="font-size: 12px;">University Of Baghdad-IT College</span>
+            </div>
+            <div class="PLACE">
+                <i class="fas fa-map-marker-alt fa-xs"></i>
+                <span class="PlacePost" style="font-size: 12px;">Baghdad</span>
+            </div>
+            <div class="DATE">
+                <i class="fas fa-calendar-alt fa-xs"></i>
+                <span class="PlacePost" style="font-size: 12px;">1/1/2021 - 22/1/2021</span>
+            </div>
+            <hr>
+            <p class="card-text " style="font-size:12px ; overflow: hidden; text-overflow: ellipsis; display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */ -webkit-box-orient: vertical;">Some quick
+                example text to build on the card title and make up the
+                bulk of the
+                card's content Some quick example text to build on the card title and make up the
+                bulk of the
+                card's content Some quick example text to build on the card title and make up the
+                bulk of the
+                card's content</p>
+            <a href="./PostPreview.html" class="btn btn-primary btn-sm">Preview Post</a>
+            <a href="#" class="btn btn-sm DelPost"><i class="fas fa-trash"></i></a>
+            <a href="#" class="btn btn-sm EditPost"><i class="fas fa-edit"></i></a>
+        </div>
+    </div>
+</div>
+<!-- ############################################ ENDPOST ########################################### -->
+<!-- ############################################ POST ########################################### -->
+<div class="col-sm">
+    <div class="card" style="width: 16rem;">
+        <img class="card-img-top" src="../static/img/pic2.png" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title"> Conference Name</h5>
+            <p class="card-text" style="color:rgb(54, 184, 54); margin-bottom:0;">100 IQD</p>
+            <div class="CENTER">
+                <i class="fas fa-user-friends fa-xs"></i>
+                <span class="PlacePost" style="font-size: 12px;">University Of Baghdad-IT College</span>
+            </div>
+            <div class="PLACE">
+                <i class="fas fa-map-marker-alt fa-xs"></i>
+                <span class="PlacePost" style="font-size: 12px;">Baghdad</span>
+            </div>
+            <div class="DATE">
+                <i class="fas fa-calendar-alt fa-xs"></i>
+                <span class="PlacePost" style="font-size: 12px;">1/1/2021 - 22/1/2021</span>
+            </div>
+            <hr>
+            <p class="card-text " style="font-size:12px ; overflow: hidden; text-overflow: ellipsis; display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */ -webkit-box-orient: vertical;">Some quick
+                example text to build on the card title and make up the
+                bulk of the
+                card's content Some quick example text to build on the card title and make up the
+                bulk of the
+                card's content Some quick example text to build on the card title and make up the
+                bulk of the
+                card's content</p>
+            <a href="./PostPreview.html" class="btn btn-primary btn-sm">Preview Post</a>
+            <a href="#" class="btn btn-sm DelPost"><i class="fas fa-trash"></i></a>
+            <a href="#" class="btn btn-sm EditPost"><i class="fas fa-edit"></i></a>
+        </div>
+    </div>
+</div>
+<!-- ############################################ ENDPOST ########################################### -->
+<!-- ############################################ POST ########################################### -->
+<div class="col-sm">
+    <div class="card" style="width: 16rem;">
+        <img class="card-img-top" src="../static/img/pic2.png" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title"> Conference Name</h5>
+            <p class="card-text" style="color:rgb(54, 184, 54); margin-bottom:0;">100 IQD</p>
+            <div class="CENTER">
+                <i class="fas fa-user-friends fa-xs"></i>
+                <span class="PlacePost" style="font-size: 12px;">University Of Baghdad-IT College</span>
+            </div>
+            <div class="PLACE">
+                <i class="fas fa-map-marker-alt fa-xs"></i>
+                <span class="PlacePost" style="font-size: 12px;">Baghdad</span>
+            </div>
+            <div class="DATE">
+                <i class="fas fa-calendar-alt fa-xs"></i>
+                <span class="PlacePost" style="font-size: 12px;">1/1/2021 - 22/1/2021</span>
+            </div>
+            <hr>
+            <p class="card-text " style="font-size:12px ; overflow: hidden; text-overflow: ellipsis; display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */ -webkit-box-orient: vertical;">Some quick
+                example text to build on the card title and make up the
+                bulk of the
+                card's content Some quick example text to build on the card title and make up the
+                bulk of the
+                card's content Some quick example text to build on the card title and make up the
+                bulk of the
+                card's content</p>
+            <a href="./PostPreview.html" class="btn btn-primary btn-sm">Preview Post</a>
+            <a href="#" class="btn btn-sm DelPost"><i class="fas fa-trash"></i></a>
+            <a href="#" class="btn btn-sm EditPost"><i class="fas fa-edit"></i></a>
+        </div>
+    </div>
+</div>
+<!-- ############################################ ENDPOST ########################################### -->
+            </div>
+        </div>
+    </main>
+    <!--########################################## MDB Link Js ##########################################-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js"></script>
+    <script src="../static/script.js"></script>
+</body>
+
+</html>

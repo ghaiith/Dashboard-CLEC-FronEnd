@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Login</title>
+    <!-- style for this templeate -->
+    <style>
+      .LoginForm{
+    padding: 20px;
+    width: 30%;
+    height: 380px;
+    margin:auto;
+    margin-top: 200px;
+    border: 1px black;
+    border-radius: 10%;
+    box-shadow:rgb(228, 227, 227);
+}
+.loginl{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    margin-left: 155px;
+}
+    </style>
+        <!-- Link with MdBootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../static/style.css">
+  </head>
+  <body>
+      <div class="LoginForm">
+          <div class="loginl">
+              <i class="fas fa-user-circle fa-7x"></i>
+          </div>
+        <form method="POST">
+          <!-- Email input -->
+          <div class="form-outline mb-4">
+            <input type="email" id="form1Example1" class="form-control" />
+            <label class="form-label" for="form1Example1">Email address</label>
+          </div>
+
+          <!-- Password input -->
+          <div class="form-outline mb-4">
+            <input type="password" id="form1Example2" class="form-control" />
+            <label class="form-label" for="form1Example2">Password</label>
+          </div>
+
+          <!-- Submit button -->
+          <button type="submit" class="btn btn-primary btn-block">
+            Sign in
+          </button>
+        </form>
+      </div>
+        <!--########################################## MDB Link Js ##########################################-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js" ></script>
+    <script src="../static/script.js"></script>
+  </body>
+</html>
