@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="../static/style.css">
-    <title>Create Admin</title>
+    <title>Edit Institution</title>
 </head>
 <body>
     <!-- ########################################## Navbar ########################################## -->
@@ -56,25 +56,36 @@
     </div>
     <!-- ##########################################   Main   ########################################## -->
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
-        <h2>Create Admin</h2>
+        <h2>Edit Institution</h2>
         <hr>
-        <div class="addadminform">
+        <div class="addinsform">
             <form method="POST">
-                <!-- Email input -->
                 <div class="form-outline mb-4">
-                  <input type="text" id="form1Example1" class="form-control" />
-                  <label class="form-label" for="form1Example1">Username</label>
+                  <input type="text" id="form1Example1" name="ins-name" class="form-control" />
+                  <label class="form-label" for="form1Example1">Institution Name</label>
                 </div>
       
-                <!-- Password input -->
                 <div class="form-outline mb-4">
-                  <input type="password" id="form1Example2" class="form-control" />
-                  <label class="form-label" for="form1Example2">Password</label>
+                  <input type="email" id="form1Example2" name="ins-email" class="form-control" />
+                  <label class="form-label" for="form1Example2">Institution Email</label>
                 </div>
-      
-                <!-- Submit button -->
+                <div class="form-outline mb-4">
+                    <input type="number" id="form1Example2" name="ins-number" class="form-control" />
+                    <label class="form-label" for="form1Example2">Institution Number</label>
+                  </div>
+                  <div class="mb-4">
+                    <select class="form-select" aria-label="Default select example">
+                      <option disabled selected>is Institution Active ?</option>
+                      <option name="ins-active" value="yes">Yes</option>
+                      <option name="ins-active" value="no">No</option>
+                    </select>
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="text" id="form1Example2" name="ins-loc" class="form-control" />
+                    <label class="form-label" for="form1Example2">Institution Location</label>
+                  </div>
                 <button type="submit" class="btn btn-primary btn-block">
-                  Add Admin
+                  Add Institution
                 </button>
               </form>
         </div>

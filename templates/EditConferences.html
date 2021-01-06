@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link with MdBootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="../static/style.css">
+    <title>Edit Conferances</title>
+</head>
+<body>
+    <!-- ########################################## Navbar ########################################## -->
+    <nav class="navbar navbar-light bg-light fixed-top flex-md-nowrap shadow">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1 AdminPName">ADMIN PANEL</span>
+          <span class="navbar-brand mb-0 h1 helloAdmin">Hello, Admin</span>
+        </div>
+      </nav>
+
+    <!-- ########################################## SideBar ########################################## -->
+      <div class="container-fluid SideBar">
+          <div class="row">
+                <div class="col-md-2 bg-dark d-none d-md-block sidebarAdmin">
+                    <div class="left-sidebar">
+                        <ul class="nav flex-column acolor">
+                            <li class="nav-item">
+                                <a class="nav-link active " aria-current="page" href="./Admin Panel.html"> <i class="fas fa-home"></i> Home Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./AdminCourses.html"><i class="fas fa-book-reader fa-sm"> </i> Courses</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./AdminExams.html"><i class="fas fa-user-edit fa-sm"></i> Exams</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./AdminConferences.html"><i class="fas fa-users fa-sm"></i> Conferances</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./AdminsUser.html"><i class="fas fa-user-cog fa-sm"></i></i> Admins</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./AdminTags.html"><i class="fas fa-tags fa-sm"></i></i> Tags</a>
+                            </li>
+                            <li class="nav-item">
+                              <a class="nav-link" href="./AdminInst.html"><i class="fas fa-school fa-sm"></i></i> institution</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="LogoutBtn" href="#"><i class="fas fa-sign-out-alt fa-sm"></i> Logout</a>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+          </div>
+      </div>
+    <!-- ##########################################   Main   ########################################## -->
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <h2>Edit Conference</h2>
+        <hr>
+        <br>
+        <div class="FormCard">
+          <form method="POST">
+              <div class="mb-3">
+                <label class="form-label" >Name of Conference</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" name="title">
+              </div>
+              <div class="mb-3">
+                <label for="exampleNameEmail1" class="form-label" >Price (in IQD)</label>
+                <span class="space">
+                  <input class="form-check-input" type="checkbox" value="Free" id="CheckFree"/>
+                  <label class="form-check-label" for="flexCheckDefault"> Free</label>
+                </span>
+                <input type="number" class="form-control" id="PriceNumber" name="price">
+              </div>
+              <div class="mb-3">
+                <label class="form-labe1 mb-2" >Institution</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option disabled selected>Name of institution</option>
+                  <option name="ins-name">University of Baghdad-IT</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label class="form-labe1 mb-2" >Place</label>
+                <select class="form-select" aria-label="Default select example">
+                  <option disabled selected>City</option>
+                  <option name="place" value="Baghdad">Baghdad</option>
+                  <option name="place" value="Wasit">Wasit</option>
+                  <option name="place" value="Karbala">Karbala</option>
+                  <option name="place" value="Babil">Babil</option>
+                  <option name="place" value="Basra">Basra</option>
+                  <option name="place" value="Dhi Qar">DhiQar</option>
+                  <option name="place" value="Al-Qadisiyyah">Al-Qadisiyyah</option>
+                  <option name="place" value="Diyala">Diyala</option>
+                  <option name="place" value="Duhok">Duhok</option>
+                  <option name="place" value="Erbil">Erbil</option>
+                  <option name="place" value="Kirkuk">Kirkuk</option>
+                  <option name="place" value="Maysan">Maysan</option>
+                  <option name="place" value="Muthanna">Muthanna</option>
+                  <option name="place" value="Najaf">Najaf</option>
+                  <option name="place" value="Nineveh">Nineveh</option>
+                  <option name="place" value="Saladin">Saladin</option>
+                  <option name="place" value="Sulaymaniyah">Sulaymaniyah</option>
+                </select>
+            </div>
+  <!-- Message input -->
+            <div class="form-outline mb-4">
+              <textarea name="description" class="form-control" id="form6Example7" rows="7"></textarea>
+              <label class="form-label" for="form6Example7">Description</label>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" >Start In</label>
+              <input type="date" class="form-control" id="exampleInputEmail1" name="start date">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" >End In</label>
+              <input type="date" class="form-control" id="exampleInputEmail1" name="end date">
+            </div>
+            <div class="mb-3">
+              <label class="form-labe1 mb-2" >Tags</label>
+              <select class="form-select" multiple size="2" data-live-search="true" aria-label="Default select example">
+                <option disabled selected>select more tags by ctrl + click on items</option>
+                <option name="Tags">first tag</option>
+                <option name="Tags">second tag</option>
+                <option name="Tags">third tag</option>
+              </select>
+          </div>
+            <div class="mb-3">
+              <label class="form-label" for="customFile">Upload Picture to post</label>
+              <input type="file" accept="image/*" class="form-control" id="customFile" name="picture post" />
+            </div>
+            <hr class="mt-3">
+            <div class="mt-3">
+              <label class="form-label" style="color:red;" >Validation date:</label>
+            </div>
+            <div class="mb-3">
+              <label class="form-label" >Post In</label>
+              <input type="date" class="form-control" id="exampleInputEmail1" name="valid-start">
+            </div>
+            <div class="mb-3">
+              <label class="form-label" >Delete Post In</label>
+              <input type="date" class="form-control" id="exampleInputEmail1" name="valid-end">
+            </div>
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+          </form>
+        </div>
+      </main>
+    <!--########################################## MDB Link Js ##########################################-->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.0.0/mdb.min.js" ></script>
+    <script src="../static/script.js"></script>
+</body>
+</html>
